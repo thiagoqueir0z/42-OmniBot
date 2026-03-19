@@ -16,7 +16,7 @@
  *    BL_IN2 -> D26   BR_IN4 -> D12
  *
  * ============================================================
- *  ESTRUTURA DO CODIGO
+ *  ESTRUTURA DO CODIGO 
  *
  *  [PARTE 1] Configuracao de pinos e constantes  -> DONE
  *  [PARTE 2] Funcoes auxiliares dos motores      -> DONE
