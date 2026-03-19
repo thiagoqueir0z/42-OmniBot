@@ -115,7 +115,7 @@ void motorBR(int v) { setMotor(BR_ENB, BR_IN3, BR_IN4, v); }
 
 
 // ============================================================
-//  PARTE 3 - FUNCOES DE MOVIMENTO  ** TAREFA DO CLUBE **
+//  PARTE 3 - FUNCOES DE MOVIMENTO  ** TAREFA **
 // ============================================================
 /*
  *  Referencia o das rodas mecanum:
@@ -178,7 +178,6 @@ void girar_direita() {
 }
 
 void girar_esquerda() {
-  int rot = SPEED * ROTATION_FACTOR;
   // ** TAREFA: implementar
 }
 
