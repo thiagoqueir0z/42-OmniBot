@@ -85,15 +85,16 @@ void setMotor(int pino_en, int inA, int inB, int valor) {
 
 	int pwm = abs(valor); // o valor de pwm precisa ser positivo.
 
-	// Kickstart - se o valor for muito baixo o carrinho nao consegue vencer a inercia e se mover.
+  // === KICK START ===
+	// Kickstart - se o valor da velocidade for muito baixo o carrinho nao consegue vencer a inercia e se mover.
 	// Entao damos um impulso para ele começar a andar e depois voltaos à velocidade escolhida.
 															// caso o pwd seja menor do que speedmin
-	if (pwm < SPEED_MIN) {
-		digitalWrite(inA, valor > 0 ? HIGH : LOW);
-		digitalWrite(inB, valor > 0 ? LOW : HIGH);
-		ledcWrite(pino_en, SPEED_MIN);
-		delay(80);
-	}
+	// if (pwm < SPEED_MIN) {
+	// 	digitalWrite(inA, valor > 0 ? HIGH : LOW);
+	// 	digitalWrite(inB, valor > 0 ? LOW : HIGH);
+	// 	ledcWrite(pino_en, SPEED_MIN);
+	// 	delay(80);
+	// }
 
 	if(valor > 0){
 		digitalWrite(inA, HIGH);
